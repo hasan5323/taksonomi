@@ -15,7 +15,7 @@ module.exports = {
       description: {
         type: Sequelize.STRING
       },
-      imageUrl: {
+      documentaryUrl: {
         type: Sequelize.STRING
       },
       createdAt: {
