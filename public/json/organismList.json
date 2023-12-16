@@ -1,0 +1,33 @@
+[
+    {
+        "Animalia": {
+            "Kuda": { "jumlah kaki": 4},
+            "Gajah": { "jumlah kaki": 4}
+    }
+    },
+    {
+        "Plantea": {
+            "Mawar": { "warna bunga": "merah" },
+            "Melati": { "warna bunga": "putih" }
+    }
+    },
+    {
+        "Protista": {
+            "Kuda": { "jumlah kaki": 4},
+            "Gajah": { "jumlah kaki": 4}
+    }
+    },
+    {
+        "bacteria": {
+            "Kuda": { "jumlah kaki": 4},
+            "Gajah": { "jumlah kaki": 4}
+    }
+    },
+    {
+        "Fungi": {
+            "Jamur Shitake": { "warna jamur": "coklat"},
+            "Jamur Tiram": { "warna jamur": "coklat"}
+
+    }
+    }
+]

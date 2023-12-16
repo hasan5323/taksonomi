@@ -1,7 +1,10 @@
+//imports
 const { Kingdom } = require("../models");
 const { Sequelize, Op } = require("sequelize");
 const port = require('../app')
 
+
+//controller
 class Controller {
     static default(req,res){
         res.redirect('/home')
