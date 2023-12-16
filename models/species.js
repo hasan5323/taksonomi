@@ -11,12 +11,21 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Species.belongsTo(models.Kingdom)
+
     }
   }
   Species.init({
     name: DataTypes.STRING,
     description: DataTypes.STRING,
-    documentaryUrl: DataTypes.STRING
+    documentaryUrl: DataTypes.STRING,
+    KingdomId:{
+      type: DataTypes.INTEGER,
+      references: {
+        model: "Kingdoms",
+        key: "id"
+      }
+    }
   }, {
     sequelize,
     modelName: 'Species',

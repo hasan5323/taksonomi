@@ -1,7 +1,7 @@
 //imports
 const { Kingdom } = require("../models");
 const { Sequelize, Op } = require("sequelize");
-const port = require('../app')
+const port  = require('../helpers/port')
 
 
 //controller
@@ -12,6 +12,7 @@ class Controller {
     static home(req,res){
         Kingdom.findAll()
         .then((result) => {
+            console.log(result);
           res.render('dasbord', {result, port})
       })
     }

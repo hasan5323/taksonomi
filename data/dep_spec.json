@@ -1,0 +1,20 @@
+[
+    {
+    "name": "Alga Merah",
+    "imageUrl":null,
+    "description":"Alga merah atau Rhodophyta adalah salah satu filum dari alga berdasarkan zat warna atau pigmentasinya. Warna merah pada alga ini disebabkan oleh pigmen fikoeritrin dalam jumlah banyak dibandingkan pigmen klorofil, karoten, dan xantofil. Alga ini pada umumnya bersel banyak dan makroskopis",
+    "documentaryUrl":"https://www.youtube.com/watch?v=RuP5-D1K--4&pp=ygUKYWxnYSBtZXJhaA%3D%3D",
+    "alt":"foto alga merah",
+    "KingdomId":"4"
+},{
+    "name": "Jamur Shitake",
+    "imageUrl":null,
+    "description":"Jamur shitake atau jamur shitake, disebut juga sebagai jamur hioko, adalah jamur pangan asal Asia Timur yang terkenal di seluruh dunia dengan nama aslinya dalam bahasa Jepang. Jamur shitake secara harafiah berarti jamur dari pohon shii karena batang pohonnya yang sudah lapuk merupakan tempat tumbuh jamur shitake",
+    "documentaryUrl": "https://www.youtube.com/watch?v=JRyek8QVqgk&pp=ygUNamFtdXIgc2hpdGFrZQ%3D%3D",
+    "alt":"foto jamur shitake",
+    "KingdomId":"4"
+
+}
+
+
+]

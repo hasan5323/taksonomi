@@ -1,7 +1,7 @@
-app.set('appname', 'taksonomi webapp')
 const express = require('express')
 const app = express()
-const port = 1000
+const port  = require('./helpers/port')
+console.log(port);
 const router = require('./routes')
 
 app.set('view engine', 'ejs')
@@ -21,4 +21,3 @@ app.listen(port, (err)=>{
     }
 })
 
-module.exports = port
