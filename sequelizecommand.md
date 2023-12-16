@@ -17,6 +17,7 @@ npx sequelize-cli seed:generate --name demo-Kingdom
 
 
 // skeleton
+npx sequelize-cli migration:generate --name add-KingdomId-to-Species
 
 
 
