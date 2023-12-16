@@ -7,52 +7,23 @@
 
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
-  <link rel="stylesheet" href="http://localhost:1000/css/grid.css">
-  <link rel="stylesheet" href="http://localhost:1000/css/main-image.css">
+  <link rel="stylesheet" href="http://localhost:<%= port %>/css/grid.css">
+  <link rel="stylesheet" href="http://localhost:<%= port %>/css/main-image.css">
 
   </head>
 <body>
   <div class="gridcontainer">
-  <div id="animalia" class="card" style="width: 18rem;">
-    <img src="http://localhost:1000/img/animalia.jpeg" class="card-img-top main-image" alt="rusa termasuk animalia">
+    <%= result.forEach((kingdom)=>{ %>
+  <div id="<%= kingdom.name %>" class="card" style="width: 18rem;">
+    <img src="http://localhost:<%= port %>/img/<%= kingdom.name %>.jpeg" class="card-img-top main-image" alt="rusa termasuk <%= kingdom.name %>">
     <div class="card-body">
-      <h5 class="card-title">Animalia</h5>
-      <p class="card-text">Kingdom pertama dalam taksonomi adalah kingdom animalia</p>
+      <h5 class="card-title"><%= kingdom.name %></h5>
+      <p class="card-text">Kingdom pertama dalam taksonomi adalah kingdom <%= kingdom.name %></p>
       <a href="#" class="btn btn-primary">masuk ke kingdom</a>
     </div>
+  <%= }) %>
   </div>
-  <div id="plantea" class="card" style="width: 18rem;">
-    <img src="http://localhost:1000/img/plantea.jpeg" class="card-img-top main-image" alt="rusa termasuk plantea">
-    <div class="card-body">
-      <h5 class="card-title">Plantea</h5>
-      <p class="card-text">Kingdom kedua dalam taksonomi adalah kingdom plantea</p>
-      <a href="#" class="btn btn-primary">masuk ke kingdom</a>
-    </div>
-  </div>
-  <div id="protista" class="card" style="width: 18rem;">
-    <img src="http://localhost:1000/img/protista.jpeg" class="card-img-top main-image" alt="rusa termasuk protista">
-    <div class="card-body">
-      <h5 class="card-title">Protista</h5>
-      <p class="card-text">Kingdom ketiga dalam taksonomi adalah kingdom protista</p>
-      <a href="#" class="btn btn-primary">masuk ke kingdom</a>
-    </div>
-  </div>
-  <div id="fungi" class="card" style="width: 18rem;">
-    <img src="http://localhost:1000/img/fungi.jpeg" class="card-img-top main-image" alt="jamur termasuk fungi">
-    <div class="card-body">
-      <h5 class="card-title">Fungi</h5>
-      <p class="card-text">Kingdom keempat dalam taksonomi adalah kingdom fungi</p>
-      <a href="#" class="btn btn-primary">masuk ke kingdom</a>
-    </div>
-  </div>
-  <div id="bacteria" class="card" style="width: 18rem;">
-    <img src="http://localhost:1000/img/bacteria.jpeg" class="card-img-top main-image" alt="e-coli termasuk bacteria">
-    <div class="card-body">
-      <h5 class="card-title">Bacteria</h5>
-      <p class="card-text">Kingdom terakhir dalam taksonomi adalah kingdom bacteria</p>
-      <a href="#" class="btn btn-primary">masuk ke kingdom</a>
-    </div>
-  </div>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

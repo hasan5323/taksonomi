@@ -1,10 +1,18 @@
+const { Kingdom } = require("../models");
+const { Sequelize, Op } = require("sequelize");
+const port = require('../app')
+
 class Controller {
     static default(req,res){
         res.redirect('/home')
     }
     static home(req,res){
-        res.render('dasbord')
+        Kingdom.findAll()
+        .then((result) => {
+          res.render('dasbord', {result, port})
+      })
     }
+    
     static add(req,res){
         res.render('add')
     }
