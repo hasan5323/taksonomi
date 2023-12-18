@@ -1,7 +1,8 @@
 //imports
 const { Kingdom } = require("../models");
 const { Sequelize, Op } = require("sequelize");
-const port  = require('../helpers/port')
+// const port  = require('../helpers/port')
+// const port = 1000
 
 
 //controller
@@ -10,10 +11,12 @@ class Controller {
         res.redirect('/home')
     }
     static home(req,res){
+        let result
         Kingdom.findAll()
-        .then((result) => {
-            console.log(result);
-          res.render('dasbord', {result, port})
+        .then((data) => {
+            result = data
+            // console.log(result[0].dataValues.name);
+          res.render('dasbord', {result})
       })
     }
     
@@ -25,6 +28,10 @@ class Controller {
     }
     static donate(req,res){
         res.render('donate')
+    }
+    static species(req,res){
+        let kingdom =   req.params.kingdom
+        res.render('species')
     }
 }
 

@@ -7,7 +7,7 @@ npx sequelize-cli migration:generate --name migration-skeleton
 
 
 // model
-npx sequelize-cli model:generate --name Species --attributes name:string,description:string,imageUrl:string;KingdomId:string
+npx sequelize-cli model:generate --name Species --attributes name:string,description:string,imageUrl:string
 npx sequelize-cli model:generate --name Kingdom --attributes name:string
 
 
