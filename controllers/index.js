@@ -7,10 +7,10 @@ const { Sequelize, Op } = require("sequelize");
 
 //controller
 class Controller {
-    static default(req,res){
+    static async default(req,res){
         res.redirect('/home')
     }
-    static home(req,res){
+    static async home(req,res){
         let result
         Kingdom.findAll()
         .then((data) => {
